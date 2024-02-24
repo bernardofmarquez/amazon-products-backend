@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  node:
+      build: .
+      container_name: node_app_container
+      ports:
+        - 5002:5002
+      platform: linux/x86_64
+      env_file:
+        - .env
